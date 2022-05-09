@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <h1 align="center">Random Password Generator</h1>
+<fieldset>
+    <form action="{% url 'password' %}">
+        <!-- <label for="select01">LENGTH</label></t></t> -->
+        <select name="length" >
+            <option value="6">6</option> 
+            <option value="7">7</option> 
+            <option value="8">8</option>9</option>      
+            <option value="9">9</option> 
+            <option value="10" selected="true">10</option> 
+            <option value="11">11</option> 
+            <option value="12">12</option> 
+            <option value="13">13</option> 
+            <option value="14">14</option> 
+            <option value="15">15</option> 
+        </select><br>
+        UPPERCASE<input type="checkbox" name="Uppercase"><br>
+        NUMERICALS<input type="checkbox" name="Numericals"><br>
+        SPECIAL CHARACTERS<input type="checkbox" name="Special_Characters"><br>
+        <input type="submit" name="Generate">
+    </form>
+</fieldset>
+<!-- <h4 align="center">Your Password is</h4> -->
+</body>
+</html>
